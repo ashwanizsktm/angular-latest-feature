@@ -1,0 +1,57 @@
+
+<!-- All the Angular latest feature -->
+
+<!--
+<h1>Angular latest feature</h1>
+@for (user of users(); track $index) {
+<div>
+	{{user.name}}
+</div>
+} @empty {
+<div>
+	we don't have anything
+</div>
+}
+
+@if (user.role === 'qa') {
+<div>Name: {{user.name}} Role: {{user.role}}</div>
+} @else if (user.role === 'developer') {
+	<div>Name: {{user.name}} Role: {{user.role}}</div>
+} @else {
+	<div>Name: {{user.name}} Role: {{user.role}}</div>
+}
+
+=========== Seperation swtch case ===========
+
+@switch (user.role) {
+	@case ('developer') {
+		<div>Name: {{user.name}} Role: {{user.role}}</div>
+	}
+	@case ('qa') {
+		<div>Name: {{user.name}} Role: {{user.role}}</div>
+	}
+	@case ('admin') {
+		<div>Name: {{user.name}} Role: {{user.role}}</div>
+	}
+}
+
+@defer (on viewport) {
+	<div>
+		Defer : - it helps rending content later if it's getting loaded, basically it delays the content as long
+		as it loads
+	</div>
+}
+
+@loading (after 150ms; minimum 150ms){
+	<div>Loading...</div>
+}
+
+@placeholder (minimum 150ms){
+  <div>placeholder:- this will get loaded till 150ms and then the defered content wil be shown</div>
+} -->
+
+<!-- Signals -->
+
+<!-- Todos -->
+<!-- <app-todos></app-todos> -->
+<router-outlet />

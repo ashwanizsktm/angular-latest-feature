@@ -1,0 +1,14 @@
+<section class="main">
+    <input id="markAll" type="checkbox" [checked]="isAllTodoSelected()"
+    (change)="toggleAllTodos($event)">
+    <label for="markAll" >Mark all as completed</label>
+    <ul class="todo-list">
+        @for (todo of visibleTodos(); track $index) {
+            <app-todos-todo 
+                [todo]="todo"
+                [isEditing]="editingId === todo.id"
+                (setEditingId)="setEditingId($event)"
+                />
+        }
+    </ul>
+</section>
